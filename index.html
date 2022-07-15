@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>2022 Book List</title>
+</head>
+<body>
+    <h1>Book List (2022)</h1>
+    <label for="users">Choose a User:</label>
+    <select name="users" id="users">
+        <option value="Austin">Austin</option>
+        <option value="Taylor">Taylor</option>
+        <option value="Alyssa">Alyssa</option>
+        <option value="Mom">Mom</option>
+    </select>
+    <input id="bookName" type="text" name="" value="" placeholder="Book Name">
+    <input id="bookRating" type="number" name="" value="" placeholder="Rate the book from 1 to 10" min="1.0" max="10">
+    <button>Add Book to List</button>
+    <section class="bookStats">
+        <section class="user">  
+            <h2>Austin's Books</h2>
+            <h3>Books Read: <span id="rating"></span></h3>
+            <ul id="austinsBooks">
+            </ul>
+        </section>
+        <section class="user">  
+            <h2>Taylor's Books</h2>
+            <h3>Books Read: </h3>
+            <ul></ul>
+        </section>
+        <section class="user">            
+            <h2>Mom's Books</h2>
+            <h3>Books Read: </h3>
+            <ul></ul>
+        </section>
+        <section class="user">
+            <h2>Alyssa's Books</h2>
+            <h3>Books Read: </h3>
+        </section>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
