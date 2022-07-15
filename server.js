@@ -16,7 +16,7 @@ app.get('/api/:authorName', (request, response) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on ${PORT}! You Better go catch it!`)
 })
 
