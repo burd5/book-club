@@ -9,7 +9,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (request,response) => {
     response.sendFile(__dirname + '/index.html')
-    response.sendFile(__dirname + '/main.js')
 })
 
 app.get('/api/:authorName', (request, response) => {
